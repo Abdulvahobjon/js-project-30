@@ -1,11 +1,17 @@
-let btnDownload  = document.querySelector(".box input")
+// inputni chaqirib olish 
+let uploadInput  = document.querySelector(".box input")
+// imgni chaqirib olish 
 let img  = document.querySelector(".box-img")
-
-btnDownload.addEventListener('change' , function(){
+// input change  bo'lgandagi holat 
+uploadInput.addEventListener('change' , function(){
+  //FileReader objectini yaratish
   let reader = new FileReader()
-  reader.readAsDataURL(btnDownload.files[0])
+  //  fileni o'qishni boshlash 
+  reader.readAsDataURL(uploadInput.files[0])
+  // onload => fileni yuklanganidan so'ng chaqiradi 
   reader.onload = function(){
-    img.setAttribute("src" , reader.result)
-    // img.src = reader.result
+    // reader.result => filedan olingan malumot 
+    // img srcsiga olingan file malumotini joylash
+    img.setAttribute("src" , reader.result )
   }
 })
