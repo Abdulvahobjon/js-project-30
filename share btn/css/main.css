@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 30px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+a{
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px 23px;
+  border-radius: 6px;
+  transition: all .3s;
+  text-transform: capitalize;
+}
+a:hover{
+  opacity: .6;
+}
