@@ -34,3 +34,6 @@ copy.addEventListener("click", function () {
   navigator.clipboard.writeText(body.style.backgroundColor);
 });
 
+localStorage.setItem("name", value);
+localStorage.getItem("name");
+
