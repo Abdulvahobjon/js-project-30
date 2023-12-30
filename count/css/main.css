@@ -1,0 +1,66 @@
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  gap: 20px;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+.plas {
+  padding: 10px 30px;
+  font-size:32px;
+}
+.count {
+}
+.minus {
+  padding: 10px 30px;
+  font-size:32px;
+}
+
+#selectPlas{
+  padding: 10px 20px;
+  font-size: 25px;
+}
+#selectMinus{
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+
+
+.social {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.telegram {
+  padding: 10px 25px ;
+  background-color: #219dd9;
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.youtube {
+  padding: 10px 25px ;
+  background-color: #f61c0d;
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+@media(max-width:768px){
+  .social{
+    right: 20px;
+    top: 50px;
+  }
+}
