@@ -65,4 +65,14 @@ body{
     right: 20px;
     top: 50px;
   }
+  .list {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
 }
