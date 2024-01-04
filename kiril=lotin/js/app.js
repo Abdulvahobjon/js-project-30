@@ -73,7 +73,14 @@ var letterRUS_UZB = {
 
 let input  =  document.querySelector('#input')
 let output  =  document.querySelector('#output')
-let btn  = document.querySelector('button')
+let btn  = document.querySelector('.btn')
+let clear  = document.querySelector('.clear')
+
+clear.addEventListener('click' , function(){
+  input.value = ""
+  output.value = ""
+})
+
 btn.addEventListener('click' , function(){
   let outputText = ''
   for(let i = 0; i < input.value.length; i++){
@@ -86,3 +93,4 @@ btn.addEventListener('click' , function(){
   }
   output.value = outputText
 })
+
