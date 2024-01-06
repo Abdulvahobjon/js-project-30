@@ -1,5 +1,6 @@
+
 let text = document.querySelector("textarea")
-let btn  = document.querySelector('a')
+let btn  = document.querySelector('.link')
 let input =  document.querySelector('input')
 
 btn.addEventListener('click' , function(){
@@ -8,3 +9,4 @@ btn.addEventListener('click' , function(){
   btn.href = URL.createObjectURL(file)
   window.location.reload()
 })
+
