@@ -29,9 +29,9 @@ label:hover{
   border: 5px solid green;
 }
 
-/* input{
+input{
   display: none;
-} */
+}
 
 button{
   max-width: 400px;
