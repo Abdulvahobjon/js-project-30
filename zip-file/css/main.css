@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+label{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px dotted blue;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-size: 32px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.609);
+  transition: all .4s;
+}
+label:hover{
+  transition: all .4s;
+  color: black;
+  font-weight: 600;
+  border: 5px solid green;
+}
+
+input{
+  display: none;
+}
+
+button{
+  max-width: 400px;
+  width: 100%;
+  padding:20px 30px;
+  font-size: 32px;
+  cursor: pointer;
+}
