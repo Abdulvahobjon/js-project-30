@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+.images-container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform .7s;
+}
+
+.images-container span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+}
+
+.images-container span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+.btn-container{
+ 
+  position: absolute;
+  left: 45%;
+  bottom: 100px;
+}
+.btn{
+  padding: 10px 30px;
+  font-size: 32px ;
+}
+
+
+.social {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.telegram {
+  padding: 10px 25px ;
+  background-color: #219dd9;
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.youtube {
+  padding: 10px 25px ;
+  background-color: #f61c0d;
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+@media(max-width:768px){
+  .social{
+    right: 20px;
+    top: 50px;
+  }
+}
