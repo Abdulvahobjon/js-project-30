@@ -11,7 +11,6 @@ input.addEventListener('change' , function(){
         span.textContent = "file yoq"
     }
 })
-
 btn.addEventListener('click' , function(){
     let zip = new JSZip()
     for (var i = 0; i < input.files.length; i++) {
