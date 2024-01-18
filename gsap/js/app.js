@@ -9,6 +9,6 @@ gsap.to(".img" , {
     scrub:4,
     endTrigger:".last"
   },
-  y:-3500
+  y:-3000
 })
 
