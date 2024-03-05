@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: sans-serif;">
+    <h1>Beforeunload haqida</h1>
+    <h2>Website da qandaydur o'zgarish qilib , chiqishga urunganda <b>beforeunload</b> ishga tushadi.</h2>
+    
+    <p>
+      Ushbu hodisa foydalanuvchiga joriy sahifada qolish yoki tark etishni xohlayotgani haqida xabar berish uchun tasdiqlash dialog oynasida xabarni ko'rsatish imkonini beradi.
+    </p>
+    
+    <a href="https://www.javascript-savollar.uz/">javascript-savollar saytiga o'tishga urinib ko'ring</a>
+    <i>Inputga ismingizni yozing va o'zgarish hosil qiling</i>
+    <input type="text" placeholder="Ismingni yoz...">
+    
+    <script>
+     
+      window.addEventListener("beforeunload", function(event) {
+        event.returnValue = "Bu saytdan chiqib ketishdan oldin , meni qanday paydo bo'lganimni ko'rmaysanmi?";
+      });
+    </script>
+  </body>
+</html>
